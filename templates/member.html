@@ -16,7 +16,7 @@
             <tr>
                 <td>{{ d[0] }}</td>
                 <td>{{ d[1] }}</td>
-                <td> <a href="{{ url_for('detail',id=d[0],name=d[1]) }}">詳細</a> </td>
+                <td> <a href="{{ url_for('detail',id_=d[0],name=d[1]) }}">詳細</a> </td>
             </tr> {% endfor %} {% endblock %}
         </tbody>
     </table>

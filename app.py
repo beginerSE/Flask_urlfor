@@ -16,10 +16,10 @@ def user_url():
 
 
 # 社員詳細情報
-@app.route("/member_detail/<int:id>/<name>")
-def detail(id, name):
+@app.route("/member_detail/<int:id_>/<name>")
+def detail(id_, name):
     lists = [['太郎', 24, 'サッカー'], ['次郎', 45, '野球'], ['三郎', 67, 'バスケ']]
-    index = id-1
+    index = id_-1
     data = lists[index]
     return render_template("detail.html", data=data, name=name)
 
